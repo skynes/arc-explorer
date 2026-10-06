@@ -1,0 +1,54 @@
+{
+  "retrieved_at": "2026-10-06",
+  "benchmark": "ARC-AGI-2",
+  "dataset_id": "v2_Semi_Private",
+  "source_urls": [
+    "https://arcprize.org/leaderboard",
+    "https://arcprize.org/media/data/models.json",
+    "https://arcprize.org/media/data/evaluations.json"
+  ],
+  "records": [
+    {
+      "target_key": "gpt-6-1-sol",
+      "model_name": "GPT-6.1 Sol",
+      "variant": "Max",
+      "score_pct": 94.2,
+      "cost_per_task_usd": 0.254,
+      "verification_status": "official_verified"
+    },
+    {
+      "target_key": "glm-5-3-flash",
+      "model_name": "GLM-5.3-Flash",
+      "variant": "Max",
+      "score_pct": 65.8,
+      "cost_per_task_usd": 0.093,
+      "verification_status": "official_verified"
+    },
+    {
+      "target_key": "deepseek-v4-flash-0731",
+      "model_name": "DeepSeek V4 Flash 0731",
+      "variant": "Max",
+      "score_pct": 61.4,
+      "cost_per_task_usd": 0.042,
+      "verification_status": "official_verified"
+    },
+    {
+      "target_key": "gpt-5-6-luna-2026-07-30",
+      "model_name": "GPT-5.6 Luna 2026-07-30",
+      "variant": "Max",
+      "score_pct": 59.6,
+      "cost_per_task_usd": 0.177,
+      "verification_status": "official_verified"
+    },
+    {
+      "target_key": "gpt-6-luna",
+      "model_name": "GPT-6 Luna",
+      "variant": "Max",
+      "score_pct": 59.3,
+      "cost_per_task_usd": 0.062,
+      "verification_status": "official_verified"
+    }
+  ],
+  "note": "Small control snapshot, not a replacement for running scripts/fetch_arc.py. GPT-6.1 Sol cost is recorded as the current board cost and should be rechecked from evaluations.json on refresh."
+}
+

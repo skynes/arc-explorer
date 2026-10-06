@@ -1,0 +1,45 @@
+{
+  "schema_version": 1,
+  "research_date": "2026-10-16",
+  "benchmark": {
+    "name": "ARC-AGI-2",
+    "evaluation": "ARC Prize Verified semi-private",
+    "source": "https://arcprize.org/leaderboard",
+    "note": "Community and unapproved results are kept separate; the arc_value recommendation uses the independent result only as a secondary signal alongside the official score."
+  },
+  "default": {
+    "name": "DeepSeek V4.1 Flash",
+    "openrouter_id": "deepseek/deepseek-v4.1-flash",
+    "reason": "Cheapest effective current default under the repository's standard profile: strong official and independent ARC evidence, the highest practical quality/value signal, and lower current OpenRouter input/output pricing than Luna.",
+    "official_arc_score_pct": 72.9,
+    "community_arc_score_pct": 69.0,
+    "arc_median_pct": 70.95,
+    "openrouter": {
+      "input_usd_per_million_tokens": 0.0357,
+      "output_usd_per_million_tokens": 0.1428,
+      "model_page": "https://openrouter.ai/deepseek/deepseek-v4.1-flash",
+      "price_note": "Current listing/discount; recheck before production use."
+    },
+    "route_hint": "Use as the normal cost-efficient agent model; recheck provider reliability, tool calling, structured output, and current price before production rollout."
+  },
+  "thinking": {
+    "name": "GPT-6.1 Sol",
+    "openrouter_id": "openai/gpt-6.1-sol",
+    "reason": "Most effective practical escalation: the highest-quality option in the current selected set while remaining much cheaper than GPT-6 Astra.",
+    "official_arc_score_pct": 94.2,
+    "official_arc_cost_usd_per_task": 0.254,
+    "openrouter": {
+      "input_usd_per_million_tokens": 2.0,
+      "output_usd_per_million_tokens": 10.0,
+      "model_page": "https://openrouter.ai/openai/gpt-6.1-sol"
+    },
+    "route_hint": "Escalate for hard tasks, repeated default-model failure, or low-confidence results; prioritize quality over cost within the high-quality tier."
+  },
+  "secondary_escalation": {
+    "name": "GPT-6 Astra",
+    "openrouter_id": "openai/gpt-6-astra",
+    "official_arc_score_pct": 95.0,
+    "official_arc_cost_usd_per_task": 1.12,
+    "route_hint": "Maximum-quality fallback when cost is secondary."
+  }
+}
